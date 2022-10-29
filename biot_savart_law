@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Understanding Physics with Simulations</h1>
+<h3><b>Sindhu Murthy, Carnegie Mellon University</b></h3>
+<h2><b>Biot-Savart Law</b></h2>
+
+ <h2><b>A note on using the Left Hand Rule to determine the direction of force</b></h2>
+ 
+ <p> Align the middle finger of the left hand pointing along the velocity vector and the index finger of the left hand pointing along the magnetic field vector and extend the thumb perpendicular to both the index and middle fingers. 
+  The thumb of the left hand then gives the direction of the force on a positive charge moving in a magnetic field. For a negative particle, reverse the direction of the force found from the Left Hand Rule.
+  
+</p>
+ 
+</body>
+</html>
