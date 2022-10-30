@@ -2,16 +2,80 @@
 <html>
 <body>
 
-<h1>Understanding Physics with Simulations</h1>
-<h3><b>Sindhu Murthy, Carnegie Mellon University</b></h3>
-<h2><b>Biot-Savart Law</b></h2>
+  <head>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+    </script>
+        
+    <script type="text/javascript"
+            src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
 
- <h2><b>A note on using the Left Hand Rule to determine the direction of force</b></h2>
- 
- <p> Align the middle finger of the left hand pointing along the velocity vector and the index finger of the left hand pointing along the magnetic field vector and extend the thumb perpendicular to both the index and middle fingers. 
-  The thumb of the left hand then gives the direction of the force on a positive charge moving in a magnetic field. For a negative particle, reverse the direction of the force found from the Left Hand Rule.
-  
+  </head>
+
+
+  <!-- <head><script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+    <script>MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script></head> -->
+<!-- <head>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js">
+    </script>
+</head> -->
+
+<i>Understanding Physics with Simulations -- </i>
+Sindhu Murthy, Carnegie Mellon University
+
+<!-- <h1></h1> -->
+<h1><b>Biot-Savart Law</b></h1>
+
+
+The Biot-Savart Law describes the magnetic field at a point in space due to a moving charge.
+
+<p>The magnetic field $\overrightarrow{B}$ <b>at</b> a point $\overrightarrow{r}$ <b>due to</b> a charge $q$ <b>at</b> 
+point $\overrightarrow{r_q}$ <b>moving with</b> velocity $\overrightarrow{v}$ is
+$$ \overrightarrow{B}(\overrightarrow{r}) = {\mu_0 \over 4\pi} {\overrightarrow{v} \times (\overrightarrow{r}-\overrightarrow{r_q}) \over  |\overrightarrow{r}-\overrightarrow{r_q}|^3 }  $$
+
 </p>
- 
+
+<p>
+  The position vector of the charge $\overrightarrow{r_p}$ can be represented by an arrow from the origin to the location of the charge.
+  Let $\overrightarrow{r}$ be the position vector of a point in space.
+  The vector $(\overrightarrow{r} - \overrightarrow{r_p})$ describes the diplacement vector of the point from the position of the charge.
+</p>
+
+<p>
+  The magnitude of the displacement vector, $|\overrightarrow{r} - \overrightarrow{r_p}|$ is large when there is greater spatial separation between
+  the point and the charge. Therefore, the magnitude of the magnetic field at point $\overrightarrow{r}$ is smaller when the charge is farther away from the point.
+</p>
+
+<p>
+  In the below example, there is a positive charge moving along the +x-axis. For a point $\overrightarrow{r}$ on the y-z plane, the cross product of the velocity $\overrightarrow{v}$ and the 
+  displacement vector $(\overrightarrow{r} - \overrightarrow{r_p})$ is a vector that is perpendicular to both $(\overrightarrow{v})$ and $(\overrightarrow{r} - \overrightarrow{r_p})$.
+</p>
+<iframe src="https://trinket.io/embed/glowscript/aca0a4d7ef?outputOnly=true&start=result" width="80%" height="450" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>Here's the same animation viewed from a different angle: </p>
+<iframe src="https://trinket.io/embed/glowscript/70e51fa03e?outputOnly=true&start=result" width="80%" height="450" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>Here's what the magnetic field due to a moving charge looks like at various points in space. Notice how the magnetic field becomes weaker as the charge moves away.
+  This obeys the Right Handed Corkscrew Rule.</p>
+<iframe src="https://trinket.io/embed/glowscript/a926226f23?outputOnly=true" width="80%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>For a <b>negative</b> charge moving along the +x-axis, the direction of the magnetic field gets reversed.</p>
+<iframe src="https://trinket.io/embed/glowscript/73134a2537?outputOnly=true" width="80%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+
+<!-- <pre>
+<math>
+	C <box>dV<sub>out</sub><over>dt</box> = I<sub>b</sub>
+	&tanh;(<box>κ(V<sub>in</sub>-V<sub>out</sub>)<over>2</box>)
+</math>
+ </pre> -->
 </body>
 </html>
