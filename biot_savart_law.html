@@ -35,7 +35,8 @@ Sindhu Murthy, Carnegie Mellon University
 <h1><b>Biot-Savart Law</b></h1>
 
 
-The Biot-Savart Law describes the magnetic field at a point in space due to a moving charge.
+The Biot-Savart Law describes the magnetic field in space due to a current carrying wire. 
+Let us look at the magnetic field at a point in space due to a single moving charge.
 
 <p>The magnetic field $\overrightarrow{B}$ <b>at</b> a point $\overrightarrow{r}$ <b>due to</b> a charge $q$ <b>at</b> 
 point $\overrightarrow{r_q}$ <b>moving with</b> velocity $\overrightarrow{v}$ is
@@ -70,6 +71,13 @@ $$ \overrightarrow{B}(\overrightarrow{r}) = {\mu_0 \over 4\pi} {q \overrightarro
 <p>For a <b>negative</b> charge moving along the same axis, the direction of the magnetic field gets reversed.</p>
 <iframe src="https://trinket.io/embed/glowscript/73134a2537?outputOnly=true&start=result" width="80%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
+	
+<p>For a current-carrying wire, the magnetic field at a point in space will be the sum of the contributions from individual charge carriers.
+For an infinitely long current-carrying wire, the magnetic field will be a constant in time at every point in space.
+	</p>
+$$ \overrightarrow{B}(\overrightarrow{r}) = {\mu_0 \over 4\pi} \int {I \overrightarrow{dl} \times (\overrightarrow{r}-\overrightarrow{r_q}) \over  |\overrightarrow{r}-\overrightarrow{r_q}|^3 }  $$
+	
+	
 <br>
  <i><a href="https://murthysindhu.github.io/physics_simulation/" title="Physics Simulations">Go to main page</a> </i>
 
